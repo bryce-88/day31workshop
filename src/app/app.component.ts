@@ -28,11 +28,11 @@ export class AppComponent {
       this.cart.push(newItem)
     }
 
-    console.info(">>> cart: ", this.cart)
+    // console.info(">>> cart: ", this.cart)
   }
 
   deleteItem(item: Item) {
-    this.cart.splice(0,1);
+    this.cart.splice(0,1)
   }
 
 }
