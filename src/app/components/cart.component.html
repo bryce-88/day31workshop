@@ -1,0 +1,19 @@
+
+<h1>My Cart</h1>
+
+<div *ngIf="cart.length > 0; else empty">
+    <table *ngFor="let i of cart">
+        <tr>
+            <td>
+                {{ i.description }}, {{ i.quantity }}
+            </td>
+            <td>
+                <button type="button" (click)="deleteItem(i)">Remove</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<ng-template #empty>
+    Your cart is empty
+</ng-template>

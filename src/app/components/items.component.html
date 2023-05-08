@@ -1,0 +1,16 @@
+
+<h1>Please Select</h1>
+
+<table *ngFor="let i of items">
+    <tr>
+        <td>
+            <img src='{{i.imageUrl}}' height="50" width="50">
+        </td>
+        <td>
+            {{ i.description }}
+        </td>
+        <td>
+            <button type="button" (click)="addItem(i)">Add</button>
+        </td>
+    </tr>
+</table>
